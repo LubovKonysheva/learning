@@ -8,7 +8,7 @@ const getWorthyWorkers = (workersArr) => {
   const worthyWorkers = [];
   
   workersArr.forEach(currentWorker => {
-    if (currentWorker.salary > 1000) {
+    if (currentWorker.salary < 1000) {
       worthyWorkers.push(currentWorker.name)
     }
   })
