@@ -8,7 +8,7 @@ const getVowels = stringToFilter => {
   for (let i = 0; i < stringToFilter.length; i++) {
     const currentLetter = stringToFilter[i].toLowerCase();
 
-    if (vowels.includes(currentLetter)) {
+    if (!vowels.includes(currentLetter)) {
       extractedVowels += currentLetter;
     }
   }

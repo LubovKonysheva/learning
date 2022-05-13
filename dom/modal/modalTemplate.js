@@ -25,6 +25,7 @@ function createModal(content) {
     body.removeChild(overlayElement);
   })
 
+  /*Тут происходит наполнение текстом модалки.*/
   const contentElement = overlayElement.querySelector(".content");
   contentElement.innerHTML = content;
 

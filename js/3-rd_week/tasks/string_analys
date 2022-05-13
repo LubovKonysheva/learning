@@ -1,10 +1,10 @@
-const path = "/users/download/index.html"
+const path = "/users/download/index.css"
 
-const isHtml = path => {
-  const requiredExt = ".html";
-  const pathExt = path.slice(-5);
+const isCss = path => {
+  const requiredExt = ".css";
+  const pathExt = path.slice(-4);
 
   return pathExt === requiredExt
 }
 
-console.log(isHtml(path));
+console.log(isCss(path));
